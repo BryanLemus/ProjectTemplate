@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="overlay"></div>
+    <nav>
+        <div id="menu"><i class="material-icons md-light">menu</i></div>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Stores</a>
+            <a href="#">About Us</a>
+        </div>
+        <div id="searchBtn" class="iconBtn"><i class="material-icons md-light">search</i></div>
+        <div id="cartBtn" class="iconBtn"><i class="material-icons md-light">shopping_cart</i></div>
+        <div id="filterBtn" class="iconBtn"><i class="material-icons md-light">filter_list</i></div>
+    </nav>
+
+    <!--Drawer Panels-->
+    <div class="Drawer" id="cartDwr">
+        <h1>Cart</h1><div class="iconBtn"><i class="material-icons">clear_all</i></div>
+        <div class="drawerMain">
+            <!--Content Here-->
+        </div>
+        <button class="drawerBtn" id="checkoutBtn">CHECKOUT</button>
+    </div>
+    <div class="Drawer" id="filterDwr">
+        <h1>Filters</h1><div class="iconBtn"><i class="material-icons">clear_all</i></div>
+        <div class="drawerMain">
+            <!--Content Here-->
+            <h3>Order by</h3>
+            <select>
+                <option>Popularity</option>
+                <option>Alphabet</option>
+                <option>Recents</option>
+            </select>
+            <select>
+                <option>Ascedent</option>
+                <option>Decedent</option>
+            </select>
+
+            <h3>Price Range</h3>
+            <input type="range" />
+
+            <h3>Free Ship</h3>
+            <input type="checkbox"  />
+        </div>
+        <button class="drawerBtn" id="applyBtn">APPLY</button>
+    </div>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
