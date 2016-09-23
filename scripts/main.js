@@ -1,9 +1,13 @@
 $(document).ready(function () {
     $('#overlay').hide();
-    $('#menu').click(function () {
-        $("#links").slideToggle();
-    })
     /*Drawers*/
+    $('#home').click(function () {
+        $('#categories').slideToggle();
+        $('#bg').slideToggle();
+    });
+    $('#searchBtn').click(function () {
+        window.location.href = 'search.html';
+    })
     $('#cartBtn').click(function () {
         $('#overlay').fadeIn('fast');
         $('#filterDwr').hide();        

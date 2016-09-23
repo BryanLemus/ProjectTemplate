@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="overlay"></div>
+    <nav>
+        <div id="home" onclick="window.history.back()"><i class="material-icons md-light">arrow_back</i></div>
+        <input type="text" />
+        <div id="cartBtn" class="iconBtn"><i class="material-icons md-light">shopping_cart</i></div>
+        <div id="filterBtn" class="iconBtn"><i class="material-icons md-light">filter_list</i></div>
+    </nav>
+
+    <!--Drawer Panels-->
+    <div class="Drawer" id="cartDwr">
+        <h1 class="drawerTitle">Cart</h1><div class="iconBtn"><i class="material-icons">clear_all</i></div>
+        <div class="drawerMain">
+            <!--Content Here-->
+        </div>
+        <button class="drawerBtn" id="checkoutBtn">CHECKOUT</button>
+    </div>
+    <div class="Drawer" id="filterDwr">
+        <h1 class="drawerTitle">Filters</h1><div class="iconBtn"><i class="material-icons">clear_all</i></div>
+        <div class="drawerMain">
+            <!--Content Here-->
+            <h4>Order by</h4>
+            <select>
+                <option>Popularity</option>
+                <option>Alphabet</option>
+                <option>Recents</option>
+            </select>
+            <select>
+                <option>Ascedent</option>
+                <option>Decedent</option>
+            </select>
+
+            <h4>Price Range</h4>
+            <input type="range" />
+
+            <h4>Categories</h4>
+            <select multiple="multiple">
+                <option>Apps</option>
+                <option>Games</option>
+                <option>Electronics</option>
+                <option>Mobibe Devices</option>
+                <option>Computers</option>
+                <option>Software</option>
+                <option>Tools</option>
+                <option>Music</option>
+                <option>Videos</option>
+                <option>Watches</option>
+                <option>Automotive Parts</option>
+                <option>Books</option>
+                <option>Toys</option>
+                <option>Baby</option>
+                <option>Shoes</option>
+                <option>Clothes</option>
+                <option>Beauty</option>
+                <option>Jewelry</option>
+                <option>Sports</option>
+                <option>Garden</option>
+                <option>Pets Supplies</option>
+                <option>Office Products</option>
+                <option>Grocery</option>
+                <option>Wine</option>
+            </select>
+            
+            <h4>Manufacturer</h4>
+            <select multiple="multiple">
+                <option>Adobe</option>
+                <option>Apple</option>
+                <option>Autodesk</option>
+                <option>Google</option>
+                <option>Samsung</option>
+                <option>Sony</option>
+                <option>Microsoft</option>
+                <option>Oracle</option>
+            </select>
+
+            <h4>Free Ship</h4>
+            <select multiple="multiple">
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+                <option>Central America</option>
+                <option>Colombia</option>
+                <option>Brasil</option>
+                <option>Venezuela</option>
+                <option>Peru</option>
+                <option>Argentina</option>
+                <option>Uruguay</option>
+                <option>Paraguay</option>
+                <option>Spain</option>
+                <option>Italy</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>United Kingdom</option>
+                <option>UAE</option>
+                <option>Egipt</option>
+                <option>China</option>
+                <option>Indian</option>
+                <option>Chile</option>
+                <option>Australia</option>
+                <option>Netherlands</option>
+                <option>Russia</option>
+            </select>
+        </div>
+        <button class="drawerBtn" id="applyBtn">APPLY</button>
+    </div>
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
